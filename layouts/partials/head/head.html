@@ -1,6 +1,6 @@
 <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-
+<head><meta name="msvalidate.01" content="33393626FD6BC55C925E00388F4A89CD" /></head>
 {{- $description := partialCached "data/description" . .RelPermalink -}}
 <meta name='description' {{ printf "content=%q" $description | safeHTMLAttr }}>
 {{ with .Params.Keywords }}<meta name="keywords" content="{{ delimit . ", " }}">{{ end }}
